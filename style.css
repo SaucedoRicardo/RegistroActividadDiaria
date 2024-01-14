@@ -112,8 +112,15 @@ table {
   margin-bottom: 5px;
 }
 .observacioness{
-  width: 900px;
+  min-width: 1000px;
   height: 40px;
+  font-size: 16;
+}
+.nombresupervisor{
+  width: 500px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .Encargado{
   padding: 0;
@@ -127,4 +134,5 @@ td{
 }
 input{
   text-align: center;
+  font-size: 16;
 }
