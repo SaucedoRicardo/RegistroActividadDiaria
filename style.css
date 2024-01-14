@@ -1,136 +1,129 @@
-body{
-    width: 109%;
-    height: 100%;
-    display: flex;
-    background-color: white;
+/* Estilos generales para pantallas más grandes */
+body {
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(230, 230, 230);
-    
-}
-header{
-  height: 20px;
-  font-size: 15PX;
-  color: black;
-  text-align: right;
-  width: 100%;
-  min-width: 950PX;
-  font-weight: bold;
-  padding-top: 15PX;
-  padding-bottom: 0;
-  margin: 0;
 }
 
-.contenido{
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  overflow-x: auto;
+/* Media query para pantallas más pequeñas (ej. dispositivos móviles) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Otra opción: justify-content: space-around; */
+}
+
+.columna {
+    width: 100%; /* O el porcentaje deseado para pantallas pequeñas */
+    box-sizing: border-box; /* Evita que el padding afecte al ancho total */
+    padding: 10px; /* Ajusta el relleno según tus necesidades */
+}
+
+@media only screen and (min-width: 600px) {
+    .columna {
+        width: 48%; /* O el porcentaje deseado para pantallas más grandes */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción original de la imagen */
 }
 .arido{
-  width: 90%;
-  height: auto;
-  background-color: wheat;
-  min-height: 200PX;
-  border-radius: 10PX;
-  border: 1PX SOLID BLACK;
-  margin-top: 15px;
-  min-width:  1150px;  overflow-x: auto;
+   
+    width: 100%;
+    height: auto;
+    border: 1PX SOLID black;
 }
-.lavado{
-  width: 90%;
-  height: auto;
-  background-color: rgb(206, 235, 255);
-  min-height: 200PX;
-  border-radius: 10PX;
-  border: 1PX SOLID BLACK;
-  margin-top: 15px;
-  min-width:  1150px;  overflow-x: auto;
+.timepickers{
+    background-color: transparent;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
-.feriaevento{
-  width: 90%;
-  height: auto;
-  background-color: rgb(221, 255, 201);
-  min-height: 200PX;
-  border-radius: 10PX;
-  border: 1PX SOLID BLACK;
-  margin-top: 15px;
-  min-width:  1150px;
-  overflow-x: auto;
+.txtboxtrans{
+    background-color: transparent;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 20px;
 }
-.tittlearido{
-  width: 100%;
-  height: 10%;
-  background-color: rgb(247, 199, 109);
-  min-width: 100%;
-  min-height: 100%;
-text-align: center;
-border-bottom: 1px black solid;
+.LABELTITTLE{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
-h3{
-  padding: 0%;
-  margin: 0%;
+.tablacentrada{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    font-weight: BOLD;
 }
-.informe{
-  padding: 20px;
-  box-sizing: border-box;
+.titulotabla{
+    border: 1px solid black;
+    width: 100%;
+    background-color: wheat;
 }
-.tittlelavado{
-  width: 100%;
-  height: 10%;
-  background-color: rgb(134, 199, 243);
-  min-width: 100%;
-  min-height: 100%;
-text-align: center;
-border-bottom: 1px black solid;
+.txtboxtabla{
+    background-color: transparent;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
 }
-.tittleferia{
-  width: 100%;
-  height: 10%;
-  background-color: rgb(162, 248, 112);
-  min-width: 100%;
-  min-height: 100%;
-text-align: center;
-border-bottom: 1px black solid;
-border-radius: 10px;
+.datosNormal{
+    border: 1px solid black;
+    width: 50px;
+   font-size: 12px;
 }
-tbody{
-  text-align: center;
+.datosl{
+    border: 1px solid black;
+    width: 200px;
+   
 }
-table{
-  min-width: none;
+.titulodatos{
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+
 }
-th, td {
-  padding: 0px;
-  width: 100%; /* Asegura que las celdas abarquen todo el ancho del contenedor */
+.titulo{
+    margin-right: 20px;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 5px;
+.datosS{
+    border: 1px solid black;
+    width: 30px;
+    font-size: 12px;
 }
-.observacioness{
-  min-width: 1000px;
-  height: 40px;
-  font-size: 16;
+.textareas{
+    background-color: transparent;
+    border: 0px;
+    width: 100%;
 }
-.nombresupervisor{
-  width: 500px;
-  height: 20px;
-  font-size: 16px;
-  font-weight: bold;
+.textareasS{
+    background-color: transparent;
+    border: 0px;
+    background-color: transparent;
+    border: 0px;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
-.Encargado{
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
+.bordeschild{
+    border: 1px black solid;
 }
-td{
-  font-weight: bold;
+.titulotablaLAVADO{
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(143, 242, 255);
 }
-input{
-  text-align: center;
-  font-size: 16;
+.titulotablaFERIA{
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(143, 255, 171);
 }
