@@ -35,7 +35,7 @@ header{
   border-radius: 10PX;
   border: 1PX SOLID BLACK;
   margin-top: 15px;
-  min-width:  1050px;  overflow-x: auto;
+  min-width:  1150px;  overflow-x: auto;
 }
 .lavado{
   width: 90%;
@@ -45,7 +45,7 @@ header{
   border-radius: 10PX;
   border: 1PX SOLID BLACK;
   margin-top: 15px;
-  min-width:  1050px;  overflow-x: auto;
+  min-width:  1150px;  overflow-x: auto;
 }
 .feriaevento{
   width: 90%;
@@ -55,7 +55,7 @@ header{
   border-radius: 10PX;
   border: 1PX SOLID BLACK;
   margin-top: 15px;
-  min-width:  1050px;
+  min-width:  1150px;
   overflow-x: auto;
 }
 .tittlearido{
