@@ -5,7 +5,7 @@ body {
 }
 
 /* Media query para pantallas más pequeñas (ej. dispositivos móviles) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
     body {
         font-size: 12px;
     }
@@ -22,7 +22,7 @@ body {
     padding: 10px; /* Ajusta el relleno según tus necesidades */
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
     .columna {
         width: 48%; /* O el porcentaje deseado para pantallas más grandes */
     }
