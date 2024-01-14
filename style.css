@@ -25,7 +25,7 @@ header{
   height: 100%;
   padding: 0px;
   margin: 0px;
-
+overflow-x: auto;
 }
 .arido{
   width: 90%;
