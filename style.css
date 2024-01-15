@@ -1,13 +1,13 @@
 /* Estilos generales para pantallas más grandes */
 body {
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Media query para pantallas más pequeñas (ej. dispositivos móviles) */
 @media only screen and (max-width: 1080px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 .contenedor {
